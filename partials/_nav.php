@@ -16,11 +16,11 @@
 		</div>
 
 		<div class="column">
-			<a href="#" class="btn" data-wipe="Experience">Experience</a>
+			<a href="experience.php" class="btn" data-wipe="Experience">Experience</a>
 		</div>
 
 		<div class="column">
-			<a href="#" class="btn" data-wipe="About">About</a>
+			<a href="about.php" class="btn" data-wipe="About">About</a>
 		</div>
 
 		<div class="column">
