@@ -5,6 +5,64 @@
 <?php require 'partials/_canvas.php'; ?>
 <?php require 'partials/_nav.php';?>
 <?php require 'partials/_profilecard.php';?>
+
+<br>
+
+<div class="container">
+
+<div class="columns">
+    <div class="column is-half is-offset-4">
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <span><a href="https://github.com/Shadid12"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></span> &nbsp &nbsp
+        <span><a href="https://www.linkedin.com/in/shadid12/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></span> &nbsp &nbsp
+        <span><a href="http://stackoverflow.com/users/3422137/shadid"><i class="fa fa-stack-overflow fa-2x" aria-hidden="true"></i></a></span> &nbsp &nbsp
+    </div>
+    
+</div>
+
+<div class="columns">
+  <div class="column" id="box1">
+    <div class="box">
+    	<strong>Front End</strong>
+    	<hr>
+    	<br>
+    	<ul>
+    		<li><span><i class="fa fa-code" aria-hidden="true"></i></span> JavaScript</li> <br>
+    		<li><span><i class="fa fa-code" aria-hidden="true"></i></span> JQuery</li> <br>
+    		<li><span><i class="fa fa-code" aria-hidden="true"></i></span> Angular.js</li> <br>
+    		<li><span><i class="fa fa-code" aria-hidden="true"></i></span> React.js</li> <br>
+    	</ul>
+    </div>
+  </div>
+  <div class="column" id="box2">
+    <div class="box">
+    	<strong>Back End</strong>
+    	<hr>
+    	<br>
+    	<ul>
+    		<li><span><i class="fa fa-diamond" aria-hidden="true"></i></span> Ruby on Rails</li> <br>
+    		<li><span><i class="fa fa-code" aria-hidden="true"></i></span> Node.js (Express.js)</li> <br>
+    		<li><span><i class="fa fa-code" aria-hidden="true"></i></span> PHP</li> <br>
+    	</ul>
+    </div>
+  </div>
+  <div class="column" id="box3">
+    <div class="box">
+    	<strong>UX/UI design</strong>
+    	<hr>
+    	<br>
+    	<ul>
+    		<li><span><i class="fa fa-html5" aria-hidden="true"></i></span> HTML5</li> <br>
+    		<li><span><i class="fa fa-css3" aria-hidden="true"></i></span> CSS</li> <br>
+    		<li><span><i class="fa fa-terminal" aria-hidden="true"></i></span> SASS</li> <br>
+    	</ul>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
 </body>
 </html>
 
@@ -37,8 +95,15 @@
 	/* global $ */
 	$(document).ready(function(){
 		$("#txtbox").hide();
+		$("#box1").hide();
+		$("#box2").hide();
+		$("#box3").hide();
 		$("#imgC").hide().delay(1500).fadeIn("slow", function(){
 			$("#txtbox").fadeIn("slow");
+			$("#box1").fadeIn("slow");
+			$("#box2").fadeIn("slow");
+			$("#box3").fadeIn("slow");
+			
 		});
 	});
 </script>
