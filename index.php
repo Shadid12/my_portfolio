@@ -10,7 +10,7 @@
 
 <div class="container">
 
-<div class="columns">
+<div class="columns" id="social">
     <div class="column is-half is-offset-4">
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <span><a href="https://github.com/Shadid12"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></span> &nbsp &nbsp
@@ -18,6 +18,14 @@
         <span><a href="http://stackoverflow.com/users/3422137/shadid"><i class="fa fa-stack-overflow fa-2x" aria-hidden="true"></i></a></span> &nbsp &nbsp
     </div>
     
+</div>
+
+<div class="container" id="resume">
+    <div class="coloumns">
+        <div class="column is-half is-offset-4" style="margin-right: -5px">
+            <a class="button is-success is-outlined is-medium" href="">Download my Resume</a>
+        </div>
+    </div>
 </div>
 
 <div class="columns">
@@ -61,8 +69,6 @@
 </div>
 </div>
 
-
-
 </body>
 </html>
 
@@ -93,17 +99,30 @@
 
 <script type="text/javascript">
 	/* global $ */
+	var booom = function() {
+	    $("#social").fadeIn("slow");
+	    $("#resume").fadeIn("slow");
+	    $("#fs").fadeIn("slow");
+	    $("#hello").fadeIn("slow");
+	}
+	
 	$(document).ready(function(){
+	    $("#fs").hide();
+	    $("#hello").hide();
 		$("#txtbox").hide();
 		$("#box1").hide();
 		$("#box2").hide();
 		$("#box3").hide();
+		$("#social").hide();
+		$("#resume").hide();
 		$("#imgC").hide().delay(1500).fadeIn("slow", function(){
 			$("#txtbox").fadeIn("slow");
 			$("#box1").fadeIn("slow");
 			$("#box2").fadeIn("slow");
 			$("#box3").fadeIn("slow");
-			
+			booom();
 		});
+		
+		
 	});
 </script>
