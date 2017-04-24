@@ -1,6 +1,6 @@
 <div class="container is-fluid">
 
-<nav class="nav" id="nav">
+<nav class="nav">
 
 	<div class="box is-fluid">
 		<div class="columns">
@@ -12,7 +12,7 @@
 		</div>
 
 		<div class="column">
-			<a href="portfolio.php" class="btn" data-wipe="Portfolio">Portfolio</a>
+			<a class="btn" data-wipe="Portfolio" id="portbtn">Portfolio</a>
 		</div>
 
 		<div class="column">
@@ -88,6 +88,5 @@
   text-indent: 0;
   transition: 0s 0.2s ease-in-out;
 }
-
 
 </style>

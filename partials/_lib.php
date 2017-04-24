@@ -11,5 +11,5 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 <script src="https://npmcdn.com/particlesjs@2.0.2/dist/particles.min.js"></script>
-
+<script type="text/javascript" src="./js/navbuttons.js"></script>
 </head>

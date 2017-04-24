@@ -5,7 +5,7 @@
 <?php require 'partials/_canvas.php'; ?>
 <?php require 'partials/_nav.php';?>
 <?php require 'partials/_profilecard.php';?>
-
+<?php require 'partials/_portfolio.php';?>
 <br>
 
 <div class="container">
