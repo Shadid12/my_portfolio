@@ -6,13 +6,13 @@
 		<div class="columns">
 		
 		<div class="column">
-			<a class="nav-item">
+			<a class="nav-item" href="/">
 				<img src="img/shadid.png" alt="Bulma logo">
 			</a>
 		</div>
 
 		<div class="column">
-			<a href="#" class="btn" data-wipe="Portfolio">Portfolio</a>
+			<a href="portfolio.php" class="btn" data-wipe="Portfolio">Portfolio</a>
 		</div>
 
 		<div class="column">

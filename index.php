@@ -1,40 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Shadid</title>
-
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.23/css/bulma.min.css">
-
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-<script src="https://npmcdn.com/particlesjs@2.0.2/dist/particles.min.js"></script>
-
-</head>
+<?php require 'partials/_lib.php'; ?>
 <body>
-
-<canvas class="background"> 
-</canvas>
-<?php 
-require 'partials/_nav.php';
- ?>
-<!--animation backgoround-->
-
-<!-- create a profile card -->
-	<div id="center">
-		
-			<img class="img-circle" src="img/profile.jpg" id="imgC">
-			<div class="box" id="txtbox">
-				<div>
-					<p>Hello, I am shadid. Full stack Web Developer. Welcome to my website</p>
-				</div>
-			</div>
-	</div>
-
+<?php require 'partials/_canvas.php'; ?>
+<?php require 'partials/_nav.php';?>
+<?php require 'partials/_profilecard.php';?>
 </body>
 </html>
 
@@ -61,6 +31,7 @@ require 'partials/_nav.php';
  }
 
 </style>
+<link rel="stylesheet" href="css/portfolio.css" type="text/css" />
 
 <script type="text/javascript">
 	/* global $ */
@@ -70,16 +41,4 @@ require 'partials/_nav.php';
 			$("#txtbox").fadeIn("slow");
 		});
 	});
-</script>
-
-<script type="text/javascript">
-window.onload = function() {
-  /* global Particles */
-  Particles.init({
-    selector: '.background',
-    maxParticles: 100,
-    sizeVariations: 3
-   });
-
-};
 </script>
