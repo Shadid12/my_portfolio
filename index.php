@@ -2,6 +2,7 @@
 <html>
 <?php require 'partials/_lib.php'; ?>
 <body>
+
 <?php require 'partials/_canvas.php'; ?>
 <?php require 'partials/_nav.php';?>
 <?php require 'partials/_profilecard.php';?>
@@ -23,53 +24,14 @@
 <div class="container" id="resume">
     <div class="coloumns">
         <div class="column is-half is-offset-4" style="margin-right: -5px">
-            <a class="button is-success is-outlined is-medium" href="">Download my Resume</a>
+            <a class="button is-success is-outlined is-medium" href="https://www.visualcv.com/shadidg">Download my Resume</a>
         </div>
     </div>
 </div>
-
-<div class="columns">
-  <div class="column" id="box1">
-    <div class="box">
-    	<strong>Front End</strong>
-    	<hr>
-    	<br>
-    	<ul>
-    		<li><span><i class="fa fa-code" aria-hidden="true"></i></span> JavaScript</li> <br>
-    		<li><span><i class="fa fa-code" aria-hidden="true"></i></span> JQuery</li> <br>
-    		<li><span><i class="fa fa-code" aria-hidden="true"></i></span> Angular.js</li> <br>
-    		<li><span><i class="fa fa-code" aria-hidden="true"></i></span> React.js</li> <br>
-    	</ul>
-    </div>
-  </div>
-  <div class="column" id="box2">
-    <div class="box">
-    	<strong>Back End</strong>
-    	<hr>
-    	<br>
-    	<ul>
-    		<li><span><i class="fa fa-diamond" aria-hidden="true"></i></span> Ruby on Rails</li> <br>
-    		<li><span><i class="fa fa-code" aria-hidden="true"></i></span> Node.js (Express.js)</li> <br>
-    		<li><span><i class="fa fa-code" aria-hidden="true"></i></span> PHP</li> <br>
-    	</ul>
-    </div>
-  </div>
-  <div class="column" id="box3">
-    <div class="box">
-    	<strong>UX/UI design</strong>
-    	<hr>
-    	<br>
-    	<ul>
-    		<li><span><i class="fa fa-html5" aria-hidden="true"></i></span> HTML5</li> <br>
-    		<li><span><i class="fa fa-css3" aria-hidden="true"></i></span> CSS</li> <br>
-    		<li><span><i class="fa fa-terminal" aria-hidden="true"></i></span> SASS</li> <br>
-    	</ul>
-    </div>
-  </div>
-</div>
-</div>
-
 </body>
+
+<?php require "partials/_skills.php" ?>
+
 </html>
 
 <style type="text/css">
@@ -97,6 +59,9 @@
 </style>
 <link rel="stylesheet" href="css/portfolio.css" type="text/css" />
 
+<!--<script type="text/javascript" src="js/exp.js"></script>-->
+<!--<link rel="stylesheet" href="css/nav.css" type="text/css" />-->
+
 <script type="text/javascript">
 	/* global $ */
 	var booom = function() {
@@ -104,6 +69,7 @@
 	    $("#resume").fadeIn("slow");
 	    $("#fs").fadeIn("slow");
 	    $("#hello").fadeIn("slow");
+	    $("#skillicon").fadeIn("slow");
 	}
 	
 	$(document).ready(function(){
@@ -115,14 +81,18 @@
 		$("#box3").hide();
 		$("#social").hide();
 		$("#resume").hide();
-		$("#imgC").hide().delay(1500).fadeIn("slow", function(){
+		$("#skillicon").hide();
+		$("#imgC").hide().delay(500).fadeIn("slow", function(){
 			$("#txtbox").fadeIn("slow");
 			$("#box1").fadeIn("slow");
 			$("#box2").fadeIn("slow");
 			$("#box3").fadeIn("slow");
 			booom();
 		});
-		
+	
+	$("#portbtn").click(function(){
+		$("#skillicon").hide();
+	});
 		
 	});
 </script>

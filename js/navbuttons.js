@@ -21,6 +21,7 @@ var show = function(){
 		$("#social").fadeIn("slow");
 		$("#resume").fadeIn("slow");
 		$("#imgC").fadeIn("slow");
+		$("#skillicon").fadeIn("slow");
 }
 
 $(document).ready(function(){
@@ -29,12 +30,12 @@ $(document).ready(function(){
        hide();
        setTimeout(function(){
            $("#portfolioSnap").fadeIn("slow");
-       }, 1000);
+       }, 500);
     });
     
     $("#goback").click(function(){
         $("#portfolioSnap").fadeOut("slow", function(){
-            setTimeout(show(), 1500);
+            setTimeout(show(), 500);
         });
     });
 });
